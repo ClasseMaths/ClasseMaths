@@ -1,4 +1,4 @@
------------------------------------------------
+/*-----------------------------------------------
 Blogger Template Style
 Name:        Mathematica
 Author :     catsoft
@@ -1587,8 +1587,6 @@ line-height: 24px;
 padding: 5px;
 }
 }
-]]></b:skin>
-<b:template-skin><![CDATA[
 /*------Layout (No Edit)----------*/
 #layout #preloader, #layout .scrolling-menu {
     display: none;
