@@ -854,7 +854,7 @@ padding: 4px 4px;
 
 /* ######## Sidebar Css ######################### */
 .sidebar .widget {
-margin-bottom: 20px;
+padding-top: 50px;
 position: relative;
 transition: all 4s;
 }
