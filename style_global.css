@@ -4,14 +4,7 @@ Name:        Mathematica
 Author :     catsoft
 License:     Free
 ----------------------------------------------- */
-/* Variable definitions
------------------------
-<Group description="Main Hover Color" selector="body">
-<Variable name="maincolor" description="Primary Color" type="color" default="#ffbd2f"  value="#ffbd2f"/>
-</Group>
-/*****************************************
-reset.css
-******************************************/
+
 html, body, .section, .widget, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -62,8 +55,27 @@ border: 0;
 .widget iframe, .widget img {
 max-width: 100%;
 }
+
+.widget, .PageList{
+    margin: 0;
+}
 .status-msg-wrap {
 display: none;
+}
+
+.carousel-wrapper{
+  text-align: center;
+}
+
+.carousel{
+width: 80%;
+    max-width: 800px;
+    display: inline-block;
+}
+.LienAccueil{
+    color:#ffffff;
+font-family: 'Playfair Display', serif;
+    font-weight: 200;
 }
 
 textarea{
@@ -162,17 +174,20 @@ background: #ffffff;
 }
 /* ######## Wrapper Css ######################### */
 #outer-wrapper{max-width:100%;margin:0 auto;background-color:#FFF;box-shadow:0 0 5px RGBA(0, 0, 0, 0.2)}
-.row{width:1170px}
+.row{width:100%;
+    padding: auto;
+}
 #content-wrapper {
 margin: 0 auto;
-padding: 20px 0 30px;
+padding: 50px 0 30px;
 overflow: hidden;
 }
 
 .item #main-wrapper, .statc_page #main-wrapper {
 float: left;
-width: 68%;
+width: 70%;
 max-width: 800px;
+margin-left:15%;
 }
 .index #main-wrapper, .archive #main-wrapper {
 float:none;
@@ -180,14 +195,7 @@ width:100%;
 max-width:100%;
 margin:50px;
 }
-.item #sidebar-wrapper, .statc_page #sidebar-wrapper {
-float: right;
-width: 30%;
-max-width: 330px;
-}
-
-
-.index #sidebar-wrapper, .archive #sidebar-wrapper {
+#sidebar-wrapper{
 	height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 300px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -304,10 +312,10 @@ color:#fff;
     letter-spacing: 1.3px;
 }
 .scrolling-menu #nav li a:hover {
-    color: $maincolor;
+    color: #ffbd2f;
 }
 .scrolling-menu #nav li.current a {
-  color: $maincolor;
+  color: #ffbd2f;
 }
 .scrolling-menu #nav li.current a:before {
     position: absolute;
@@ -319,7 +327,7 @@ color:#fff;
     content: '';
     -webkit-transition: all ease .3s;
     transition: all ease .3s;
-    background: $maincolor;
+    background: #ffbd2f;
 }
 /* ######## Navigation Menu Css ######################### */
 .slicknav_menu {
@@ -355,6 +363,11 @@ font-weight:400;
 letter-spacing:2px;
 text-transform:uppercase;
 font-family: Montserrat;
+}
+
+#menu_icon{
+    margin:10px;
+    width:38px;
 }
 /*
     Mobile Menu Core Style
@@ -443,7 +456,7 @@ background: #fff;
     
 }
 .slicknav_nav a:hover{
-    color: $maincolor;
+    color: #ffbd2f;
 }
 .slicknav_nav .slicknav_txtnode {
      margin-left:15px;   
@@ -464,7 +477,7 @@ text-align:center;
 .item .tm-menu, .static_page .tm-menu, .error_page .tm-menu {
     display: inline-block;
 }
-ul#nav1 {
+#nav1 {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -492,7 +505,7 @@ position: relative;
     margin: 0;
 }
 #menu ul > li:hover > a {
-    color: $maincolor
+    color: #ffbd2f
 }
 .index #menu ul > li > a {
 color:#fff;
@@ -571,7 +584,8 @@ border-bottom: 1px solid;
     border-color: #e5e5e5;
 }
 #menu ul > li > ul > li:hover {
-    background-color: rgba(255, 255, 255, 0.03)
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.03);
 }
 #menu ul > li > ul > li a {
     font-size: 11px;
@@ -605,9 +619,6 @@ color:#000;
 #menu ul > li > ul > li.parent > a:after {
     content: '\f105';
     float: right
-}
-#menu ul ul {
-
 }
 
 /* ######## Header Css ######################### */
@@ -681,7 +692,7 @@ font-family: 'Righteous', cursive;
 }
 .header-logo-desc span {
     font-size: 31px;
-    color: $maincolor;
+    color: #ffbd2f;
 }
 .header-logo-desc p {
 display: inline-block;
@@ -718,7 +729,7 @@ text-transform:uppercase;
 .typed-cursor {
     font-weight: 300;
     font-size: 50px;
-    color: $maincolor;
+    color: #ffbd2f;
     opacity: 1;
     -webkit-animation: blink 1s infinite;
     -moz-animation: blink 1s infinite;
@@ -747,20 +758,6 @@ padding: 4px 4px;
     text-decoration: none;
     margin: 2px 2px;
     cursor: pointer;
-}
-
-.fenix-head {
-  display:table;
-width:100%;
-height:100%;
-}
-.fenix-sub-head {
-margin:0 auto;
-display:table-cell;
-vertical-align: middle;
-}
-.index .fenix-sub-head, .archive .fenix-sub-head {
-
 }
 
 .slide-in {
@@ -922,12 +919,13 @@ text-align:justify;
 }
 
 .block-image {
-    flex:25%;
+    width:160px;
+    height:160px;
 position:relative;
 }
 .block-image .thumb {
-    width: 100%;
-    height: auto;
+    width: 160px;
+    height: 160px;
     position: relative;
     display: block;
     overflow: hidden;
@@ -1014,7 +1012,7 @@ line-height: 1.1;
     border-radius: 4px;
 }
 .ias_trigger a:hover {
-background:$maincolor;
+background:#ffbd2f;
 }
 #blog-pager {
 clear: both;
@@ -1040,7 +1038,7 @@ margin-top: 10px;
 .displaypageNum a:hover,
 .showpage a:hover,
 .pagecurrent, .blog-pager-older-link:hover, .blog-pager-newer-link:hover {
-background: $maincolor;
+background: #ffbd2f;
 text-decoration: none;
 color: #fff;
 }
@@ -1185,7 +1183,7 @@ color: #eeeeee;
 text-transform: uppercase;
 }
 .bot-menu ul li a:hover {
-color:$maincolor;
+color:#ffbd2f;
 }
 .footer_copyright {
     display: inline-block;
@@ -1194,7 +1192,7 @@ height:52px;
 line-height:52px;
 }
 .footer_copyright a {
-color:$maincolor;
+color:#ffbd2f;
 }
 /* ######## Custom Widget Css ######################### */
 .item #ads-home {
@@ -1230,11 +1228,11 @@ background:#3B3B3B;
 }
 .cloud-label-widget-content .label-size a:hover,
 .cloud-label-widget-content .label-size a:active {
-background: $maincolor;
+background: #ffbd2f;
 color: #fff;
 }
 .cloud-label-widget-content .label-size .label-count {
-background: $maincolor;
+background: #ffbd2f;
 color: #fff;
 white-space: nowrap;
 display: inline-block;
@@ -1258,7 +1256,7 @@ position: absolute;
 left: 0px;
 top: 8px;
 font-size: 22px;
-color: $maincolor
+color: #ffbd2f
 }
 .lowerbar .list-label-widget-content li a {
 color:#fff;
@@ -1271,7 +1269,7 @@ font-weight: 400;
 text-transform: capitalize;
 }
 .list-label-widget-content li span:last-child {
-color: $maincolor;
+color: #ffbd2f;
 font-size: 12px;
 font-weight: 700;
 position: absolute;
@@ -1325,7 +1323,7 @@ line-height: 1.4em;
 transition: color .3s;
 }
 .PopularPosts ul li a:hover {
-color: $maincolor
+color: #ffbd2f
 }
 .PopularPosts .item-title {
 margin: 0 0 4px;
@@ -1382,6 +1380,7 @@ margin: 0 auto;
 #main-wrapper {
 max-width: 100%;
 }
+
 #sidebar-wrapper {
 padding-top: 20px;
 }
@@ -1524,7 +1523,7 @@ width: 100%;
 margin:0 auto;
 }
 .index .post-outer {
-padding: 0 0 5x;
+padding: 0 0 5px;
 }
 }
 @media only screen and (max-width: 360px) {
@@ -1698,5 +1697,4 @@ body#layout .FollowByEmail .widget-content:before, body#layout .footer_copyright
 display:none;
 }
 
-body#layout .sora-special-box, body#layout .sora-works-box, body#layout .sora-about-box, body#layout .insta-wrap, body#layout  .Portfolio-title {display:none;}
 /*------Layout (end)----------*/
