@@ -190,7 +190,6 @@ padding-top:50px;
 .item #main-wrapper, .statc_page #main-wrapper {
 float: left;
 width: 70%;
-max-width: 800px;
 margin-left:15%;
 }
 .index #main-wrapper, .archive #main-wrapper {
