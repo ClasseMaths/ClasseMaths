@@ -188,6 +188,11 @@ overflow: hidden;
 #accueil{
 padding-top:50px;
 }
+#Blog1{
+margin-left: 5%;
+margin-right: 5%;
+padding-top: 5%;
+}
 
 .item #main-wrapper, .statc_page #main-wrapper {
 float: left;
