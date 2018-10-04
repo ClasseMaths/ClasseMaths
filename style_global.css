@@ -255,6 +255,7 @@ transition: all .5s;
 }
 .scroll-head-wrap {
         display:flex;
+	margin: 0px;
 }
 .item .scroll-header h1, .static_page .scroll-header h1, .error_page .scroll-header h1 {
     display: block!important;
