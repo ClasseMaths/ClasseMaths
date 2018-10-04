@@ -283,7 +283,8 @@ color:#000!important;
 color:#fff;
 }
 .scrolling-menu {
-    float: right;
+    margin-left:auto;
+    margin-right:2%;
     display: inline-block;
     width: auto;
 }
