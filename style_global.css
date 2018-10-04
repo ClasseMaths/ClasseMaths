@@ -201,9 +201,9 @@ margin-left:15%;
 }
 .index #main-wrapper, .archive #main-wrapper {
 float:none;
-width:90%;
-max-width:90%;
-margin:5%;
+width:100%;
+max-width:100%;
+margin:0px;
 }
 #sidebar-wrapper{
 	height: 100%; /* Full-height: remove this if you want "auto" height */
