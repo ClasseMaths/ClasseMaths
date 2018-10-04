@@ -174,8 +174,10 @@ background: #ffffff;
 }
 /* ######## Wrapper Css ######################### */
 #outer-wrapper{max-width:100%;margin:0 auto;background-color:#FFF;box-shadow:0 0 5px RGBA(0, 0, 0, 0.2)}
-.row{width:100%;
+.row{
+	width:100%;
     padding: auto;
+	display: flex;
 }
 #content-wrapper {
 margin: 0 auto;
