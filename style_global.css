@@ -63,15 +63,6 @@ max-width: 100%;
 display: none;
 }
 
-.carousel-wrapper{
-  text-align: center;
-}
-
-.carousel{
-width: 80%;
-    max-width: 800px;
-    display: inline-block;
-}
 .LienAccueil{
     color:#ffffff;
 font-family: 'Playfair Display', serif;
