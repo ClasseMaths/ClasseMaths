@@ -1,0 +1,57 @@
+[
+    {
+        "auteur": "Georg Cantor",
+        "id": "1",
+        "texte": "L'essence des mathématiques, c'est la liberté."
+    },
+    {
+        "auteur": "André Weil",
+        "id": "2",
+        "texte": "La logique est l'hygiène des mathématiques"
+    },
+    {
+        "auteur": "Charles Caleb Colton",
+        "id": "3",
+        "texte": "L'étude des mathématiques est comme le Nil, qui commence en modestie et finit en magnificence."
+    },
+    {
+        "auteur": "Blaise Pascal",
+        "id": "4",
+        "texte": "La vie n'est bonne qu'à étudier et à enseigner les mathématiques."
+    },
+    {
+        "auteur": "George Steiner",
+        "id": "5",
+        "texte": "Les hautes mathématiques sont l'autre musique de la pensée."
+    },
+    {
+        "auteur": "James Jeans",
+        "id": "7",
+        "texte": "Le grand architecte semble être mathématicien."
+    },
+    {
+        "auteur": "Galilée",
+        "id": "8",
+        "texte": "Le livre de la nature est écrit dans un langage mathématique."
+    },
+    {
+        "auteur": "Poincaré",
+        "id": "9",
+        "texte": "Comment se fait-il qu'il y ait des gens qui ne comprennent pas les mathématiques ?"
+    },
+    {
+        "auteur": "Pierre Dac",
+        "id": "10",
+        "texte": "D'après Euclide, le carré est un quadrilatère dont les quatre angles sont droits et les quatre côtés égaux. D'après Sophicléïde, le carré est un triangle qui a réussi ou une circonférence qui a mal tourné"
+    },
+    {
+        "auteur": "Blaise Pascal",
+        "id": "11",
+        "texte": "La vie n'est bonne qu'à étudier et à enseigner les mathématiques"
+    },
+    {
+        "auteur": "René Descartes",
+        "id": "12",
+        "texte": "Les mathématiques ont des inventions très subtiles et qui peuvent beaucoup servir, tant à contenter les curieux qu'à faciliter tous les arts et à diminuer le travail des hommes"
+    }
+]
